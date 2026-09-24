@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrate GPU Pipeline</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+    />
+  </head>
+  <body>
+    <body>
+      <img-comparison-slider style="height: 700px">
+        <canvas slot="first" style="height: 700px" id="raw"></canvas>
+        <canvas slot="second" style="height: 700px" id="denoised"></canvas>
+      </img-comparison-slider>
+    </body>
+    <script src="./gpu.ts" type="module"></script>
+  </body>
+</html>
